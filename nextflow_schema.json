@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/./master/nextflow_schema.json",
+  "title": ". pipeline parameters",
+  "description": "",
+  "type": "object",
+  "definitions": {
+    "example_parameters": {
+      "title": "Example parameters",
+      "type": "object",
+      "description": "",
+      "default": "",
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "Moderna",
+          "description": "Name to say hello to"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/example_parameters"
+    }
+  ]
+}
